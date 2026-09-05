@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Reviews | Foxeye Detectives - Case Resolutions</title>
+  <meta name="description" content="Verified feedback from our corporate and civil clients. Read how Foxeye Detectives handles complex surveillance, background vetting, and cyber investigations.">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- QUESTIONS & CONTACT INFO TOP BANNER -->
+  <div class="questions-banner" id="questionsBanner">
+    <div class="container-fluid banner-inner">
+      <span class="banner-text">
+        <i class="fa-solid fa-circle-question"></i> Have questions? Talk to our chief investigator or fill out our contact survey below for an instant email confirmation response.
+      </span>
+      <button class="banner-close-btn" onclick="document.getElementById('questionsBanner').style.display='none'" aria-label="Close banner">&times;</button>
+    </div>
+  </div>
+
+  <!-- TOP INFO BAR -->
+  <div class="top-bar">
+    <div class="container-fluid top-bar-wrapper" style="width: 100%; display: flex; justify-content: space-between;">
+      <div class="top-bar-left">
+        <a id="topPhone" href="tel:+918921635174">
+          <i class="fa-solid fa-phone"></i> <span class="phone-text">(+91) 8921 63 5174</span>
+        </a>
+        <a id="topEmail" href="mailto:info@foxeyedetectives.com">
+          <i class="fa-solid fa-envelope"></i> <span class="email-text">foxeyeinternational@gmail.com</span>
+        </a>
+        <a id="topWhatsapp" href="https://wa.me/919539393322" target="_blank">
+          <i class="fa-brands fa-whatsapp" style="color: #2cb742;"></i> <span class="whatsapp-text">(+91) 9539 39 3322</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <button id="enquireNowBtn" class="top-bar-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER NAVIGATION -->
+  <header>
+    <div class="container-fluid nav-container">
+      <a href="index.html" class="logo-area" id="logoLink">
+        <!-- Logo Image with Detective Agency text -->
+        <div style="display: flex; flex-direction: column; align-items: center; margin-right: 15px;">
+          <img src="assets/output-onlinepngtools (1).png" alt="FOX EYE INTERNATIONAL" class="brand-logo-main" style="height: 35px; width: auto;">
+          <small style="font-size: 0.6rem; font-weight: 600; color: var(--text-muted); margin-top: 2px; text-align: center; line-height: 1.2;">DETECTIVE AGENCY AND MEDIA<br>PVT. LTD.<br>CIN No:U74999KL2019PTCO59888</small>
+        </div>
+        <!--<span>
+        <strong id="navbarAgencyName" class="brand-text-name">FOX EYE INTERNATIONAL</strong>
+        </span>-->
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#credentials">Our Team</a></li>
+          <li><a href="reviews.html" class="active">Reviews</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SUB-PAGE HEADER BANNER -->
+  <section class="subpage-hero">
+    <div class="container-fluid">
+      <h1>Client <span>Reviews</span></h1>
+      <p>Verified case testimonials and resolving feedback under strict anonymity parameters</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS LAYOUT SECTION -->
+  <section class="reviews-section">
+    <div class="container-fluid">
+      <div class="reviews-filter-wrapper">
+        <span class="filter-label">Filter Category:</span>
+        <div class="reviews-filters" id="reviewsFilters">
+          <button class="filter-btn active" data-category="all">All Reviews</button>
+          <button class="filter-btn" data-category="personal">Personal Cases</button>
+          <button class="filter-btn" data-category="corporate">Corporate Intelligence</button>
+          <button class="filter-btn" data-category="cyber">Cyber & Forensics</button>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid">
+        <!-- Review cards will render dynamically from javascript or initial load -->
+        
+        <div class="review-card" data-category="corporate">
+          <div class="review-header">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-date">10 days ago</span>
+          </div>
+          <p class="review-body">"Our corporate firm suspected leakage of patent designs. Foxeye team executed a background audit and technical countermeasure scan. They pinpointed the source within 48 hours. Absolute professionals."</p>
+          <div class="review-footer">
+            <div class="review-author">
+              <strong>Corporate Client</strong>
+              <span>CEO, Tech Logistics</span>
+            </div>
+            <span class="review-case-id">Case Ref: CORP-89410</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-category="personal">
+          <div class="review-header">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-date">3 weeks ago</span>
+          </div>
+          <p class="review-body">"Very professional pre-matrimonial validation services. The information provided was detailed, verified, and backed by factual documentation. Highly recommend their field operatives."</p>
+          <div class="review-footer">
+            <div class="review-author">
+              <strong>Client Verified</strong>
+              <span>Kochi Resident</span>
+            </div>
+            <span class="review-case-id">Case Ref: PERS-28104</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-category="cyber">
+          <div class="review-header">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="review-date">1 month ago</span>
+          </div>
+          <p class="review-body">"Discreet device forensics. They recovered crucial logs from compromised servers, mapping out IP coordinates and timestamps which legal counsel successfully presented in court."</p>
+          <div class="review-footer">
+            <div class="review-author">
+              <strong>Legal Counsel</strong>
+              <span>High Court Practitioner</span>
+            </div>
+            <span class="review-case-id">Case Ref: CYB-77290</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-category="corporate">
+          <div class="review-header">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-date">2 months ago</span>
+          </div>
+          <p class="review-body">"Comprehensive background verification audits. We ran screenings on high-level administrative recruits. Foxeye discovered hidden histories that saved us from critical security risks."</p>
+          <div class="review-footer">
+            <div class="review-author">
+              <strong>HR Director</strong>
+              <span>Fintech Firm</span>
+            </div>
+            <span class="review-case-id">Case Ref: CORP-55104</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-category="personal">
+          <div class="review-header">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-date">3 months ago</span>
+          </div>
+          <p class="review-body">"Helped locate our missing family member who went off-grid. Discreet ground surveillance tracked details across multiple transit points safely. Endless gratitude to the operatives."</p>
+          <div class="review-footer">
+            <div class="review-author">
+              <strong>Family Representative</strong>
+              <span>Private Client</span>
+            </div>
+            <span class="review-case-id">Case Ref: PERS-39420</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DYNAMIC BRANDING / CUSTOMIZATION DRAWER (SETTINGS) -->
+  <div class="settings-drawer" id="settingsDrawer">
+    <div class="settings-header">
+      <h3><i class="fa-solid fa-sliders"></i> Brand Settings</h3>
+      <button class="settings-close" id="settingsCloseBtn">&times;</button>
+    </div>
+    <div class="settings-body">
+      
+      <!-- Agency Name input -->
+      <div class="settings-section">
+        <label class="form-group">
+          <span style="font-size: 0.85rem; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.5rem;">Agency Name</span>
+          <input type="text" id="agencyNameInput" placeholder="Foxeye Detectives">
+        </label>
+      </div>
+
+      <!-- Color switcher buttons -->
+      <div class="settings-section">
+        <span style="font-size: 0.85rem; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.8rem;">Accent Color Theme</span>
+        <div class="color-picker">
+          <div class="color-option amber active" data-theme="amber" title="Amber Gold"></div>
+          <div class="color-option cyan" data-theme="cyan" title="Neon Cyan"></div>
+          <div class="color-option emerald" data-theme="emerald" title="Emerald Noir"></div>
+        </div>
+      </div>
+
+
+
+      <div class="settings-section" style="margin-top: 3rem; font-size: 0.8rem; color: var(--text-dark); text-align: center;">
+        <p>Changes apply instantly and persist across page refreshes.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- FLOATING THEME TOGGLE BUTTON -->
+  <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark / Light Mode" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon" id="themeToggleIcon"></i>
+  </button>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="container-fluid footer-grid">
+      
+      <div class="footer-about">
+        <a href="#" class="logo-area">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="assets/output-onlinepngtools (1).png" alt="FOX EYE INTERNATIONAL" class="brand-logo-footer" style="height: 40px; width: auto;">
+            <small style="font-size: 0.6rem; font-weight: 600; color: #a0aec0; margin-top: 3px; text-align: center; line-height: 1.2;">DETECTIVE AGENCY AND MEDIA<br>PVT. LTD.<br>CIN No:U74999KL2019PTCO59888</small>
+          </div>
+          <span>
+            <strong class="brand-text-name footerBrandName"></strong>
+          </span>
+        </a>
+        <p>Providing high-precision civil, corporate, matrimonial, and digital forensic intelligence. Complete confidentiality guaranteed under attorney-client privilege.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Secure Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Secure Twitter/X"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Secure LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Sitemap</h3>
+        <ul>
+          <li><a href="index.html">Home Portal</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#credentials">Our Team</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Office</h3>
+        <div class="footer-contact-details">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="footerAddress">TC 10/1194 THRIKKADAVOOR, KOLLAM ,KERALA PIN:691601</span>
+          </p>
+           <!-- WhatsApp -->
+          <p>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>
+              WhatsApp:
+              <a href="https://wa.me/919539393322?text=Hello%20Foxeye%20Agency%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                class="whatsapp-link" target="_blank" rel="noopener noreferrer">
+                (+91) 9539 39 3322
+              </a>
+            </span>
+          </p>
+
+          <!-- Primary Call -->
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Primary:
+              <a href="tel:+919539393322" class="phone-link">
+                (+91) 9539 39 3322
+              </a>
+            </span>
+          </p>
+
+          <!-- Secondary Call -->
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Secondary:
+              <a href="tel:+918921635174" class="phone-link">
+                (+91) 8921 63 5174
+              </a>
+            </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <span id="footerEmail">foxeyeinternational@gmail.com</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer-bottom">
+      <p>&copy; <span id="copyrightYear">2026</span> <span class="brand-text-name"></span>. All rights strictly reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">POWERED BY LUEMIND AI LABS</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

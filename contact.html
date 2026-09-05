@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | FOX EYE INTERNATIONAL - Inquiry Portal</title>
+  <meta name="description" content="Submit your inquiry to FOX EYE INTERNATIONAL. Professional investigation and intelligence services. Contact us for a confidential consultation.">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- QUESTIONS & CONTACT INFO TOP BANNER -->
+  <div class="questions-banner" id="questionsBanner">
+    <div class="container-fluid banner-inner">
+      <span class="banner-text">
+        <i class="fa-solid fa-circle-question"></i> Need immediate assistance? Contact our team directly or submit your inquiry below for a prompt response.
+      </span>
+      <button class="banner-close-btn" onclick="document.getElementById('questionsBanner').style.display='none'" aria-label="Close banner">&times;</button>
+    </div>
+  </div>
+
+  <!-- TOP INFO BAR -->
+  <div class="top-bar">
+    <div class="container-fluid top-bar-wrapper" style="width: 100%; display: flex; justify-content: space-between;">
+      <div class="top-bar-left">
+        <a id="topPhone" href="tel:+919539393322">
+          <i class="fa-solid fa-phone"></i> <span class="phone-text">(+91) 9539 39 3322 </span>
+        </a>
+        <a id="topEmail" href="mailto:foxeyeinternational@gmail.com">
+          <i class="fa-solid fa-envelope"></i> <span class="email-text">foxeyeinternational@gmail.com</span>
+        </a>
+        <a id="topWhatsapp" href="https://wa.me/+919539393322" target="_blank">
+          <i class="fa-brands fa-whatsapp" style="color: #2cb742;"></i> <span class="whatsapp-text">(+91) 9539 39 3322</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <button id="enquireNowBtn" class="top-bar-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Submit Inquiry</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER NAVIGATION -->
+  <header>
+    <div class="container-fluid nav-container">
+      <a href="index.html" class="logo-area" id="logoLink">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-right: 15px;">
+          <img src="assets/output-onlinepngtools (1).png" alt="FOX EYE INTERNATIONAL" class="brand-logo-main" style="height: 35px; width: auto;">
+          <small style="font-size: 0.6rem; font-weight: 600; color: var(--text-muted); margin-top: 2px; text-align: center; line-height: 1.2;">DETECTIVE AGENCY AND MEDIA<br>PVT. LTD.<br>CIN No:U74999KL2019PTCO59888</small>
+        </div>
+        <span>
+          <strong id="navbarAgencyName" class="brand-text-name"></strong>
+        </span>
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#credentials">Leadership</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SUB-PAGE HEADER BANNER -->
+  <section class="subpage-hero">
+    <div class="container-fluid">
+      <h1>Get In <span>Touch</span></h1>
+      <p>Submit your inquiry, schedule a consultation, or reach our team directly</p>
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section class="contact-section" id="contact" style="padding-top: 4rem;">
+    <div class="container-fluid">
+      <div class="contact-layout">
+        
+        <div class="contact-details">
+          <!-- CATCHY EYEPHRASE DIRECT MEET CARD -->
+          <div class="direct-meet-card">
+            <h3><i class="fa-solid fa-handshake-angle"></i> Prefer In-Person Consultation?</h3>
+            <p class="eyephrase">"Confidentiality and trust are built face-to-face. Visit our office for a secure briefing."</p>
+            <p>Our lead investigators and consultants are available for private, secure consultations. Our Kollam headquarters provides a completely confidential meeting space with full attorney-client privilege protection.</p>
+          </div>
+          
+          <div class="contact-info-list" style="margin-top: 2.5rem;">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="info-text">
+                <h4>Headquarters</h4>
+                <p id="hqAddress">TC 10/1194 THRIKKADAVOOR, KOLLAM ,KERALA PIN:691601</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="info-text">
+                <h4>Phone</h4>
+                <p>
+                  Primary: <span id="infoPhonePrimary" style="color: var(--text-main);">(+91) 9539 39 3322</span><br>
+                  Secondary: <span id="infoPhoneSecondary" style="color: var(--text-main);">(+91) 8921 63 5174</span>
+                </p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="info-text">
+                <h4>Email</h4>
+                <p><a id="infoEmail" href="mailto:foxeyeinternational@gmail.com">foxeyeinternational@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-brands fa-whatsapp" style="color: #2cb742;"></i>
+              </div>
+              <div class="info-text">
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/919539393322" target="_blank" style="color: #2cb742;">(+91) 9539 39 3322</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Interactive survey contact card -->
+        <div class="contact-deck">
+          <form id="inquiryForm" onsubmit="handleSurveySubmit(event)">
+            <div style="margin-bottom: 1.5rem;">
+              <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">Submit Your Inquiry</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Fill out the form below and our team will contact you shortly.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="clientName"><i class="fa-solid fa-user"></i> Full Name / Organization</label>
+              <input type="text" id="clientName" placeholder="Your name or company name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+              <input type="email" id="contactEmail" placeholder="your.email@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="caseType"><i class="fa-solid fa-list"></i> Service Category</label>
+              <select id="caseType" required>
+                <option value="">Select an inquiry type...</option>
+                <option value="personal">Personal Investigation & Verification</option>
+                <option value="corporate">Corporate Intelligence & Due Diligence</option>
+                <option value="cyber">Digital Forensics & Cyber Analysis</option>
+                <option value="legal">Legal Support & Insurance Claims</option>
+                <option value="security">Security & Protection Services</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="urgencyLevel"><i class="fa-solid fa-bolt"></i> Priority Level</label>
+              <select id="urgencyLevel" required>
+                <option value="">Select priority...</option>
+                <option value="standard">Standard (24-48 hour response)</option>
+                <option value="urgent">Urgent (4-6 hour response)</option>
+                <option value="immediate">Immediate (Emergency response)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="caseBrief"><i class="fa-solid fa-pen-fancy"></i> Inquiry Details</label>
+              <textarea id="caseBrief" rows="5" placeholder="Describe your inquiry, requirements, or concerns in detail. The more information provided, the better we can assist you..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn-cyber" id="submitBtn">
+              <i class="fa-solid fa-send"></i> Submit Inquiry
+            </button>
+          </form>
+          
+          <!-- Interactive acknowledgement response board -->
+          <div class="acknowledgement-card" id="acknowledgementCard" style="display: none;">
+            <div class="ack-header">
+              <div class="ack-status-spinner" id="ackSpinner">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+              </div>
+              <div class="ack-status-success" id="ackSuccessIcon" style="display: none;">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <h3 id="ackStatusTitle">Processing Your Inquiry...</h3>
+            </div>
+            <div class="ack-body">
+              <p id="ackStatusDesc">Submitting your information securely...</p>
+              <div class="ack-details" id="ackDetailsBlock" style="display: none;">
+                <div class="ack-ref">
+                  <i class="fa-solid fa-ticket"></i> Reference Code: <strong><span id="ackRefCode">FX-89420</span></strong>
+                </div>
+                <div class="ack-email-toast">
+                  <i class="fa-solid fa-check"></i> Confirmation email sent to <strong id="ackTargetEmail">your.email@example.com</strong>
+                </div>
+                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.1); font-size: 0.9rem; color: var(--text-muted);">
+                  <p><strong>Next Steps:</strong> Our team will review your inquiry and contact you within the specified timeframe.</p>
+                </div>
+              </div>
+              <button class="btn-secondary" style="width: 100%; margin-top: 1.5rem; justify-content: center; display: none;" id="resetFormBtn">Submit Another Inquiry</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAP SECTION -->
+  <section class="map-section">
+    <div class="container-fluid">
+      <h2 class="section-title">VISIT<span>US</span></h2>
+      <p class="section-subtitle">Our Headquarters Location</p>
+      
+      <!-- Clickable Google Map Location Box -->
+<a href="https://www.google.com/maps/place/FOX+EYE+INTERNATIONAL+DETECTIVE+AGENCY/@8.9203804,76.5913405,17z/data=!3m1!4b1!4m6!3m5!1s0x3b05fd0c69c703a9:0x8940d20e64506279!8m2!3d8.9203751!4d76.5939154!16s%2Fg%2F11qydj2yy7?entry=ttu"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="map-card"
+   title="Click to open in Google Maps">
+
+    <div class="map-iframe-container">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.5605581743152!2d76.59134007449793!3d8.92038039068087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fd0c69c703a9%3A0x8940d20e64506279!2sFOX%20EYE%20INTERNATIONAL%20DETECTIVE%20AGENCY!5e0!3m2!1sen!2sin!4v1784180017893!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+
+        <div class="map-card-overlay">
+            <span class="map-overlay-btn">
+                <i class="fa-solid fa-map-location-dot"></i>
+                Open Google Maps
+            </span>
+        </div>
+
+    </div>
+
+</a>
+
+  </section>
+
+  <!-- DYNAMIC BRANDING / CUSTOMIZATION DRAWER (SETTINGS) -->
+  <div class="settings-drawer" id="settingsDrawer">
+    <div class="settings-header">
+      <h3><i class="fa-solid fa-sliders"></i> Customization</h3>
+      <button class="settings-close" id="settingsCloseBtn">&times;</button>
+    </div>
+    <div class="settings-body">
+      
+      <!-- Color switcher buttons -->
+      <div class="settings-section">
+        <span style="font-size: 0.85rem; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.8rem;">Accent Color Theme</span>
+        <div class="color-picker">
+          <div class="color-option amber active" data-theme="amber" title="Amber Gold"></div>
+          <div class="color-option cyan" data-theme="cyan" title="Neon Cyan"></div>
+          <div class="color-option emerald" data-theme="emerald" title="Emerald Noir"></div>
+        </div>
+      </div>
+
+      <div class="settings-section" style="margin-top: 3rem; font-size: 0.8rem; color: var(--text-dark); text-align: center;">
+        <p>Changes apply instantly and persist across page refreshes.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- FLOATING THEME TOGGLE BUTTON -->
+  <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark / Light Mode" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon" id="themeToggleIcon"></i>
+  </button>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="container-fluid footer-grid">
+      
+      <div class="footer-about">
+        <a href="#" class="logo-area">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="assets/output-onlinepngtools (1).png" alt="FOX EYE INTERNATIONAL" class="brand-logo-footer" style="height: 40px; width: auto;">
+            <small style="font-size: 0.6rem; font-weight: 600; color: #a0aec0; margin-top: 3px; text-align: center; line-height: 1.2;">DETECTIVE AGENCY AND MEDIA<br>PVT. LTD.<br>CIN No:U74999KL2019PTCO59888</small>
+          </div>
+          <span>
+            <strong class="brand-text-name footerBrandName"></strong>
+          </span>
+        </a>
+        <p>Providing high-precision civil, corporate, matrimonial, and digital forensic intelligence. Complete confidentiality guaranteed under attorney-client privilege.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Secure Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Secure Twitter/X"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Secure LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#credentials">Leadership</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <div class="footer-contact-details">
+          <!-- WhatsApp -->
+          <p>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>
+              WhatsApp:
+              <a href="https://wa.me/919539393322?text=Hello%20FOX%20EYE%20INTERNATIONAL%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                class="whatsapp-link" target="_blank" rel="noopener noreferrer">
+                (+91) 9539 39 3322
+              </a>
+            </span>
+          </p>
+
+          <!-- Primary Call -->
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Primary:
+              <a href="tel:+919539393322" class="phone-link">
+                (+91) 9539 39 3322
+              </a>
+            </span>
+          </p>
+
+          <!-- Secondary Call -->
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Secondary:
+              <a href="tel:+918921635174" class="phone-link">
+                (+91) 8921 63 5174
+              </a>
+            </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <span id="footerEmail">foxeyeinternational@gmail.com</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid footer-bottom">
+      <p>&copy; <span id="copyrightYear">2026</span> <span class="brand-text-name"></span>. All rights strictly reserved. Confidential Investigation Services.</p>
+      <div class="footer-bottom-links">
+        <a href="#">POWERED BY LUEMIND AI LABS</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

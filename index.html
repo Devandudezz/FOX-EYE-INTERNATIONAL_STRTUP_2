@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foxeye Detectives | Premium Confidential Private Investigation Firm</title>
+  <meta name="description" content="Foxeye Detectives and Foxeye International offer premier private investigative, forensic, surveillance, and corporate threat intelligence services globally.">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- FontAwesome Icons for quick premium visual layouts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- QUESTIONS & CONTACT INFO TOP BANNER -->
+  <div class="questions-banner" id="questionsBanner">
+    <div class="container-fluid banner-inner">
+      <span class="banner-text">
+        <i class="fa-solid fa-circle-question"></i> Have questions? Talk to our chief investigator or fill out our contact survey on the contact page for an instant email confirmation response.
+      </span>
+      <button class="banner-close-btn" onclick="document.getElementById('questionsBanner').style.display='none'" aria-label="Close banner">&times;</button>
+    </div>
+  </div>
+
+  <!-- TOP INFO BAR -->
+  <div class="top-bar">
+    <div class="container-fluid top-bar-wrapper" style="width: 100%; display: flex; justify-content: space-between;">
+      <div class="top-bar-left">
+        <a id="topPhone" href="tel:+919539393322">
+          <i class="fa-solid fa-phone"></i> <span class="phone-text">(+91) 9539 39 3322</span>
+        </a>
+        <a id="topEmail" href="mailto:foxeyeinternational@gmail.com">
+          <i class="fa-solid fa-envelope"></i> <span class="email-text">foxeyeinternational@gmail.com</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span>Operational Desk</span>
+        <button id="enquireNowBtn" class="top-bar-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER NAVIGATION -->
+  <header>
+    <div class="container-fluid nav-container">
+      <a href="index.html" class="logo-area" id="logoLink">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <img src="assets/output-onlinepngtools (1).png" alt="FOX EYE INTERNATIONAL" class="brand-logo" style="height: 45px; width: auto;">
+          <small style="font-size: 0.6rem; font-weight: 600; color: var(--text-muted); margin-top: 2px; text-align: center; line-height: 1.2;">DETECTIVE AGENCY AND MEDIA<br>PVT. LTD.<br>CIN No:U74999KL2019PTCO59888</small>
+        </div>
+        <span>
+          <strong id="navbarAgencyName" class="brand-text-name"></strong>
+        </span>
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#credentials">The Team</a></li>
+          <li><a href="#trust-portal">FAQS</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-hud"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-slider" id="heroSlider">
+      <!-- Dynamic Slides from config.js / app.js will render here -->
+      <div class="slide active">
+        <div class="slide-bg" style="background-image: url('assets/city_intel.jpg');"></div>
+        <div class="container-fluid hero-container-inner" style="height: 100%; display: flex; align-items: center;">
+          <div class="hero-content">
+            <span class="hero-badge">OPERATIONAL STATE: ACTIVE</span>
+            <h1>Vigilant <br><span>Analytics</span></h1>
+            <p>Uncovering critical details and evidence under any conditions, worldwide.</p>
+            <div class="hero-btns">
+              <button class="btn-primary" onclick="window.location.href='contact.html'">
+                <i class="fa-solid fa-envelope"></i> Contact Us
+              </button>
+              <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slider controls -->
+    <div class="hero-controls">
+      <div class="slider-dots" id="sliderDots">
+        <span class="slider-dot active" data-index="0"></span>
+        <span class="slider-dot" data-index="1"></span>
+        <span class="slider-dot" data-index="2"></span>
+      </div>
+      <div class="slider-arrows">
+        <button class="slider-arrow" id="prevSlide" aria-label="Previous Slide">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow" id="nextSlide" aria-label="Next Slide">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section" id="services">
+    <div class="container-fluid">
+      <h2 class="section-title">OUR <span>SERVICES.</span></h2>
+      <p class="section-subtitle">Know about what all we do.</p>
+      
+      <div class="services-grid" id="servicesGrid">
+        <!-- Servicelist will render dynamically based on config.js values -->
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST PORTAL: CONFIDENTIALITY & FAQS -->
+  <section class="trust-section" id="trust-portal">
+    <div class="container-fluid">
+      <h2 class="section-title">FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+      <h4>WE KNOW YOU HAVE DOUBTS.</h4>
+
+      <div class="faq-accordion-wrapper" style="max-width: 850px; margin-top: 3.5rem;">
+        
+        <!-- Dropbox 1: Legality & Evidence -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Legality, Evidence & Authority</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-group-content">
+              <div class="faq-qa-block">
+                <h5>Are your findings and intelligence reports legally admissible?</h5>
+                <p>Yes. All evidence, including surveillance footage, field logs, and forensic data, is gathered through compliant, lawful investigative methods to ensure admissibility for legal counsel and civil court reviews.</p>
+              </div>
+              <div class="faq-qa-block">
+                <h5>Do private investigators hold law enforcement powers?</h5>
+                <p>No. We operate purely as civil fact-finders. Private investigators do not hold police arrest authority, badges, or law enforcement status. We collect evidence to support legal and personal decision-making.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropbox 2: Confidentiality & Digital Boundaries -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Confidentiality & Digital Boundaries</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-group-content">
+              <div class="faq-qa-block">
+                <h5>How do you guarantee client privacy and confidentiality?</h5>
+                <p>Confidentiality is our primary protocol. All communications, case logs, and briefing folders are encrypted locally. Upon case resolution and client handoff, all operational files are securely purged.</p>
+              </div>
+              <div class="faq-qa-block">
+                <h5>What are the legal boundaries of digital investigations?</h5>
+                <p>We do not perform unauthorized phone tracking, account hacking, or private message cloning. We focus on lawful OSINT (Open Source Intelligence) audits, digital footprint analysis, and forensic examinations of client-owned systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropbox 3: Rates, Retainers & Intake -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Rates, Retainers & Client Intake</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-group-content">
+              <div class="faq-qa-block">
+                <h5>How are investigation costs and retainers calculated?</h5>
+                <p>Rates are structured based on case parameters, geographical scope, and deployed resources (surveillance units, forensic analysis). We operate on a retainer model and supply detailed itemized expense reports.</p>
+              </div>
+              <div class="faq-qa-block">
+                <h5>Can a client remain anonymous during the consultation?</h5>
+                <p>Yes. Initial briefings can be conducted under an alias. Your identity is protected under non-disclosure parameters from the very first contact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BANNER SECTION -->
+  <section class="stats-banner" id="stats">
+    <div class="container-fluid">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" id="statCases" data-target="300">0</div>
+          <div class="stat-title">Cases Resolved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="statAgents" data-target="30">0</div>
+          <div class="stat-title">Field Agents</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="statSatisfaction" data-target="99">0</div>
+          <div class="stat-title">Success Rate %</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="statYears" data-target="6">0</div>
+          <div class="stat-title">Years of Operations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXECUTIVE LEADERSHIP & CERTIFICATIONS SECTION -->
+  <section class="credentials-section" id="credentials">
+    <div class="container-fluid">
+      <h2 class="section-title">THE <span>TEAM.</span></h2>
+      <p class="section-subtitle">Get to know us.</p>
+      
+      <div class="credentials-grid">
+        <!-- Managing Director Profile Card -->
+        <div class="credentials-card profile-card">
+          <div class="credentials-image-wrapper" style="padding: 0; background: none;">
+            <img src="assets/detect.jpg" alt="Mr. BINU K RAJ" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+          </div>
+          <div class="credentials-content">
+            <span class="cred-badge">MANAGING DIRECTOR</span>
+            <h3>Mr. BINU K RAJ</h3>
+            <h4 class="director-name">M.D & Investigation Chief</h4>
+            <h4 class="director-name">DIN: 08581500</h4>
+            <p>Directing the intelligence strategies and field operations of our firm. With over 15 years of forensic
+              expertise, coordinating local civil audits and international tracking setups with utmost confidentiality.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accreditations & Licenses Card -->
+        <div class="credentials-card cert-card">
+          <div class="credentials-image-wrapper cert-wrapper" style="padding: 0; background: none;">
+            <img src="assets/detect2.jpg" alt="Mrs. NIRMALA B" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+          </div>
+          <div class="credentials-content">
+            <span class="cred-badge">MANAGING DIRECTORI</span>
+            <h3>Mrs. NIRMALA B</h3>
+            <h4 class="director-name">DIRECTOR, INTERNATIONAL OPERATIONS</h4>
+            <h4 class="director-name">DIN: 08581501</h4>
+            <p>Our organization strictly adheres to state regulations, legal evidence guidelines, and cyber verification
+              practices. Registered, certified, and vetted for corporate background profiling and civil evidence
+              discovery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES DETAIL MODAL -->
+  <div class="modal" id="serviceModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Service Heading</h3>
+        <button class="modal-close" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        Service information text.
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" onclick="closeServiceModal(); window.location.href='contact.html'">Request Call</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING THEME TOGGLE BUTTON -->
+  <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark / Light Mode" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon" id="themeToggleIcon"></i>
+  </button>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="container-fluid footer-grid">
+      
+      <div class="footer-about">
+        <a href="#" class="logo-area">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="assets/output-onlinepngtools (1).png" alt="FOX EYE INTERNATIONAL" class="brand-logo-footer" style="height: 40px; width: auto;">
+            <small style="font-size: 0.6rem; font-weight: 600; color: #a0aec0; margin-top: 3px; text-align: center; line-height: 1.2;">DETECTIVE AGENCY AND MEDIA<br>PVT. LTD.<br>CIN No:U74999KL2019PTCO59888</small>
+          </div>
+          <span>
+            <strong class="brand-text-name footerBrandName"></strong>
+          </span>
+        </a>
+        <p>Providing high-precision civil, corporate, matrimonial, and digital forensic intelligence. Complete confidentiality guaranteed under attorney-client privilege.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Secure Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Secure Twitter/X"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Secure LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Redirect to</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#credentials">Leadership</a></li>
+          <li><a href="index.html#trust-portal">Cases & Protocols</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Office</h3>
+        <div class="footer-contact-details">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="footerAddress">TC 10/1194 THRIKKADAVOOR, KOLLAM ,KERALA PIN:691601</span>
+          </p>
+          <p>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>
+              WhatsApp:
+              <a href="https://wa.me/919539393322?text=Hello%20Foxeye%20Agency%2C%20I%20would%20like%20to%20make%20an%20enquiry." class="whatsapp-link" target="_blank" rel="noopener noreferrer">
+                (+91) 9539 39 3322
+              </a>
+            </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Primary:
+              <a href="tel:+919539393322" class="phone-link">
+                (+91) 9539 39 3322
+              </a>
+            </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Secondary:
+              <a href="tel:+918921635174" class="phone-link">
+                (+91) 8921 63 5174
+              </a>
+            </span>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <span id="footerEmail">foxeyeinternational@gmail.com</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer-bottom">
+      <p>&copy; <span id="copyrightYear">2026</span> <span class="brand-text-name"></span>. All rights strictly reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">POWERED BY LUEMIND AI LABS</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
