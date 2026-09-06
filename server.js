@@ -142,7 +142,7 @@ app.post('/api/contact-survey', async (req, res) => {
       <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; background-color: #1b2431; color: #f3f4f6; border-radius: 8px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
         <div style="text-align: center; border-bottom: 1px solid #243041; padding-bottom: 20px; margin-bottom: 20px;">
           <h2 style="color: #ffaa00; margin: 0; text-transform: uppercase; letter-spacing: 2px;">FOX EYE INTERNATIONAL</h2>
-          <small style="color: #9ba4b3; letter-spacing: 1px;">DETECTIVE AGENCY AND MEDIA PRIVATE LTD.</small>
+          <small style="color: #9ba4b3; letter-spacing: 1px;">FOX EYE INTERNATIONAL DETECTIVE AGENCY AND MEDIA PRIVATE LTD.</small>
         </div>
         
         <p>Dear ${clientName},</p>
