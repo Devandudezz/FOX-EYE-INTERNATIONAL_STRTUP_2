@@ -3,6 +3,31 @@
 document.addEventListener("DOMContentLoaded", () => {
   const defaultConfig = window.agencyConfig;
 
+  // 0. MOBILE MENU TOGGLE
+  const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  if (mobileMenuToggle && navMenu) {
+    mobileMenuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("mobile-menu-open");
+    });
+
+    // Close menu when a link is clicked
+    const navLinks = navMenu.querySelectorAll("a");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("mobile-menu-open");
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("header")) {
+        navMenu.classList.remove("mobile-menu-open");
+      }
+    });
+  }
+
   // 1. COLOR SCHEME / THEME SWITCHER LOGIC
   const themeToggleBtns = document.querySelectorAll("#themeToggleBtn");
   

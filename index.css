@@ -282,6 +282,16 @@ nav a:hover::after, nav a.active::after {
   border: none;
   cursor: pointer;
   color: var(--text-main);
+  font-size: 1.5rem;
+  z-index: 101;
+}
+
+.mobile-menu-toggle i {
+  transition: var(--transition-fluid);
+}
+
+.mobile-menu-toggle:hover i {
+  color: var(--primary-color);
 }
 
 /* HERO SLIDER SECTION */
@@ -1447,8 +1457,76 @@ footer {
     height: 70px;
   }
   
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   nav ul {
-    display: none; /* Mobile menu can fold or be toggled */
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0;
+    gap: 0;
+    list-style: none;
+    display: none;
+    z-index: 100;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  nav ul.mobile-menu-open {
+    display: flex;
+  }
+
+  nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  nav a::after {
+    display: none;
+  }
+
+  nav a.active {
+    background-color: rgba(var(--primary-rgb), 0.08);
+    color: var(--primary-color);
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+
+  [data-color-mode="light"] nav ul {
+    background-color: #f0f2f5;
+  }
+
+  [data-color-mode="light"] nav li {
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+  }
+
+  [data-color-mode="light"] nav a {
+    color: #2d3748;
+  }
+
+  [data-color-mode="light"] nav a:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  [data-color-mode="light"] nav a.active {
+    background-color: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary-color);
   }
   
   .contact-layout {
